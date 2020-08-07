@@ -1,0 +1,33 @@
+body {
+    background-color: pink;
+}
+ main {
+     width: 1200px;
+     /* pour centrer la marge sur la page margin 0 auto*/
+     margin: 0 auto; 
+     background-color: violet;
+ }
+ haeder {
+     background-color: yellow;
+     float: left;
+     width: 1200px;
+     height: 150px;
+ }
+ aside {
+     background-color: whitesmoke;
+     width: 200px;
+     float: left;
+     min-height: 500px;
+ }
+ section {
+     background-color: turquoise;
+     width: 1000px;
+     float: left;
+     min-height: 500px;
+ }
+
+ 
+ 
+
+
+   

@@ -1,0 +1,30 @@
+body {
+    background-color: paleturquoise;
+}
+#zoning2 {
+    width: 1200px;
+    margin: auto;
+}
+
+#zoning2 header {
+    background-color: whitesmoke;
+    height: 200px;
+}
+
+#zoning2 aside {
+    width: 200px;
+    background-color: rgb(18, 128, 179);
+    float: left;
+    height: 400px;
+}
+
+#zoning2 .milieu {
+    width: 800px;
+    float: left;
+    background-color:rgb(155, 184, 196);
+    height: 400px;
+}
+
+footer {
+    background-color: whitesmoke;
+}
