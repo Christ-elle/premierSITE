@@ -1,0 +1,35 @@
+body {
+    background-color: lightcyan;
+}
+#zoning4 {
+    width: 800px;
+    background-color: red;
+    margin: auto;
+    text-align: center;
+    color: lightyellow;
+}
+#zoning4 header {
+    background-color: lawngreen;
+    min-height: 100px;
+    text-align: center;
+    margin: auto;
+}
+#zoning4 nav {
+    background-color: rgb(10, 116, 151);
+    height: 100px;
+    text-align: center;
+}
+#zoning4 section {
+    border: white solid 20px;
+    background-color: pink;
+    text-align: center;
+    height: 500px;
+
+}
+#zoning4 footer {
+    background-color: peachpuff;
+    height: 50px;
+    margin: 0;
+    text-align: center;
+    margin: 0;
+}
