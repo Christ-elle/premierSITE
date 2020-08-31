@@ -1,0 +1,118 @@
+#body {
+     background-color: white;
+}
+#zoning6 {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: lightskyblue; 
+   
+}
+#zoning6 .haut1 {
+    height: 100px;
+    background: red;
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+#zoning6 .haut2 {
+    height: 100px;
+    background: green;
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+#zoning6 .haut3 {
+    height: 100px;
+    background:rgb(59, 245, 226);
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+#zoning6 nav {
+    width: 1000px;
+    background-color: lightskyblue;
+    text-align: center;
+    height: 160px;
+    color: white;
+    margin: 0 auto;
+}
+
+#zoning6 .zgauche {
+    width: 200px;
+    height: 600px;
+    background-color: rgb(235, 121, 235);
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    
+}
+#zoning6 .za {
+    height: 250px;
+    width: 400px;
+    background-color: bisque;
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+#zoning6 .zb {
+    height: 250px;
+    width: 400px;
+    background-color: whitesmoke;
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+#zoning6 .diaporama {
+   
+    height: 500px;
+    background-color: rgb(160, 216, 76);
+    text-align: center;
+    color: white;
+}
+#zoning6 .zc {
+    float: left;
+    height: 80px;
+    width: 200px;
+    background-color: greenyellow;
+    text-align: center;
+    color: white;
+}
+#zoning6 .zd {
+    float: left;
+    height: 80px;
+    width: 200px;
+    background-color: violet;
+    text-align: center;
+    color: white;
+}
+#zoning6 .ze {
+    float: left;
+    height: 80px;
+    width: 200px;
+    background-color: orange;
+    text-align: center;
+    color: white;
+}
+#zoning6 .zf {
+    float: left;
+    height: 80px;
+    width: 200px;
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+#zoning6 footer {
+    background-color: lightseagreen;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}

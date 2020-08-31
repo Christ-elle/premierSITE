@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+body {
+    background-color: pink;
+}
+main {
+    width: 1000px;
+    min-height: 500px;
+    margin: auto;
+    background-color: #fff;
+}
+#en-tete {
+    height: 100px;
+    line-height: 100px;
+    background-color: ghostwhite;
+    text-align: center;
+}
+.bg-orange {
+    background-color: orange;
+    color: white;
+}
+
+/* static position qui ne change pas // position de base  */
+.cercle {
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+q::before {
+    content: "«";
+    color: orange;
+}
+q::after {
+    content:"»";
+    color: red;
+}
+    </style>
+    <title>qcm-wf3</title>
+    
+</head>
+<body>
+    <main>
+        <div id="en-tete">
+            <h1>QCM-WF3</h1>
+        </div>
+        <h2>Ceci est un titre 2 avec un mot en blanc sur un fond <span class="bg-orange">orange</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore, beatae neque doloribus nihil, maxime placeat dolore itaque ea minima rem vel qui vitae incidunt consequuntur. Nulla assumenda placeat sit.</p>
+        </h2>
+        <div class="cercle"></div>
+        <q> Quelques guillemets </q>, dit il, <q> sont mieux que pas du tout</q>
+    </main>
+    
+</body>
+</html>

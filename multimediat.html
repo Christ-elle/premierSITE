@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mon premier site: Colombbus groupe de Suresnes">
+        <!-- les mots clefs utiles pour les moteurs de recherche moins utilisées de nos jours -->
+    <meta name="keywords" content="html, css, christelle, estevane, colombbus, suresmes, premier site">
+        <!-- la description indispensable pour les moteurs de recherche et qui s'affiche dans les résultats  -->
+    <meta name="author" content="christelle estevane">
+
+    <title>Multimediat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Les styles du premier site  -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> 
+
+    <!-- Les îcones embarquées depuis font awesome  -->
+    <script src="https://kit.fontawesome.com/2e4b18e20c.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+        <a href="#logo"><button type="button"><i class="fas fa-arrow-circle-up"></i></button></a>
+        <img src="img/logo.png" alt="logo premier site">
+        
+        <!-- fin de id logo -->
+        </div>  
+        <div id="slogan">
+            <a href="index.html" title="Mon premier site en HTML CSS 5 et CSS 3">
+            <h1>Mon premier site en HTML 5 et CSS 3</h1></a></div>
+            <div id="social">
+                <a href="https://www.instagram.com/?hl=fr" target="_blank">
+                    <i class="fab fa-instagram"></i></a>
+                <a href="https://fr-fr.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-square"></i></a>
+            </div>
+        <div class="clear"></div>
+        
+    </header>
+    <nav>
+        <div class="ancreNav"></div>
+            <a href="index.html" title="Accueil">Accueil</a>
+            <a href="texte.html" title="Texte">Texte</a>
+            <a href="selecteur.html" title="Selecteur">Selecteur</a>
+            <a href="image.html" title="Image" class="active">Image</a>
+            <a href="position.html" title="Position">Position</a>
+            <a href="zoning.html" title="Zoning">Zoning</a>
+            <a href="tableau.html" title="Tableau">Tableau</a>
+            <a href="liste.html" title="Liste">Liste'</a>
+            <a href="lien_menu.html" title="Lien">Lien</a>
+            <a href="formulaire.html" title="Formulaire">Formulaire</a>
+            <a href="multimedia.html" title="Multimedia" class="active">Multimedia</a>
+            <a href="animation.html" title="Animation">Animation</a>
+            <a href="recap.html" title="Récapitulatif">Récapitulatif</a>
+    </nav>
+
+     <main> 
+         <!-- contenu principal   -->
+          <h2>Multimédia <i class="fas fa-video-slash"></i></h2>
+
+         <section class="videoFond"> 
+           <h3>Une vidéo en fond</h3>
+
+           <div class="videoTexte">
+               <!-- Le navigateur va le plus souvent,bloquer les contenus audios et vidéos. Voilà pourquoi il est préférable de mettre les outis de lecture de stop ect. La barre de contrôle de la vidéo  -->
+               <video autoplay loop controls>
+                   <!-- Muted dans les attributs de l'élément vidéo est un moyen de contourner le non lancement de la vidéo, mais elle est muette  -->
+                   <source src="video/videoBackground.mp4" type="video/mp4">
+               </video>
+               <p>Une vidéo en noir & blanc</p>
+
+           </div>
+
+        </section>
+        <section>
+            <h3>Une vidéo intégrée depuis youtube</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ch-Bh66S4Yg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="audio">
+            <h3>Audios, les sons</h3>
+            <h4>Format .mp3</h4>
+            <br>
+            <audio src="audio/sf_ambi_oiseaux_campagne_01.mp3" controls></audio>
+
+            <h4>Format Ogg</h4>
+            <br>
+            <audio src="audio/son.ogg"controls>  
+            <p>Votre navigateur ne prend pas en charge l'audio HTML </p>
+            </audio>
+          
+            <br>
+            <audio src="audio/sf_ambi_oiseaux_campagne_01.mp3"controls autoplay></audio>
+
+            <hr>
+            <audio controls>
+                <source src="audio/son.ogg" type="audio/ogg">
+                <source src="audio/son.mp3" type="audio/mpeg">
+
+            </audio>
+
+        </section>
+
+       
+    </main> 
+    <!-- fin de main  -->
+    <footer>
+        <!-- pied de page  -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quia commodi neque ea ullam aliquid esse laudantium dolor cumque? Sint unde ut perspiciatis vel quod, sapiente ipsum sunt consectetur amet!</p>
+    </footer>
+</body>
+</html>

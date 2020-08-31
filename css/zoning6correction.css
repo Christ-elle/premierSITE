@@ -1,0 +1,103 @@
+body {
+    background: url(../img/concrete-texture.png);
+}
+#zoning6 {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    background-color: pink;
+}
+
+
+#zoning6 header{
+    height: 200px;
+    /* background-color: #fff; */
+}
+.clear {
+    clear: both;
+}
+.haut1 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: tomato;
+}
+.haut2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: teal;
+}
+.haut3 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: turquoise;
+}
+
+#zoning6 nav {
+    height: 50px;
+    background-color: lightblue;
+}
+
+#zoning6 nav p{
+    margin: 0;
+}
+#zoning6 aside {
+    width: 25%;
+    height: 500px;
+    float: left;
+    background-color: thistle;
+}
+#zoning6 section {
+    width: 75%;
+    background-color: lightgreen;
+    float: left;
+}
+#zoning6 .a {
+    height: 200px;
+    width: 50%;
+    float: left;
+    background-color: wheat;
+}
+#zoning6 .b {
+    height: 200px;
+    width: 50%;
+    float: left;
+    background-color: black;
+}
+#zoning6 .diaporama {
+    height: 200px;
+    background-color: khaki;
+}
+#zoning6 .c {
+    height: 100px;
+    width: 25%;
+    float: left;
+    background-color: lime;
+}
+#zoning6 .d {
+    height: 100px;
+    width: 25%;
+    float: left;
+    background-color: powderblue;
+}
+#zoning6 .e {
+    height: 100px;
+    width: 25%;
+    float: left;
+    background-color: rosybrown;
+}
+#zoning6 .f {
+    height: 100px;
+    width: 25%;
+    float: left;
+    background-color: orchid;
+}
+#zoning6 footer {
+    min-height: 100px;
+}
+#zoning6 footer p {
+    margin: 0;
+}
