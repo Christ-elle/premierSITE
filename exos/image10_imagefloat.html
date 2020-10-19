@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image10_imagefloat</title>
+        <style>
+            main#cricri {
+                background-color: lightblue;
+                margin: 0 auto;
+                width: 600px;
+            }
+            #conteneur {
+                background-color: peachpuff;
+                margin: 0 auto;
+                width: 600px;
+                padding: 10px;
+            }
+            .image1 {
+                float: right;
+            }
+            .p1 {
+                float: right;
+            } 
+            .image2 {
+              padding-top: -48px;
+                
+            }
+             .p2 {
+                padding-left: 60px;
+            } 
+            div#correction {
+                background-color: lightsalmon;
+                margin: 0 auto;
+                width: 600px;
+            }
+            .a-droite {
+                float: right;
+            }
+            .a-gauche {
+                float: left;
+            }
+            .clear {
+                clear: both;
+            }
+            @media (max-width: 600px) {
+                #conteneur {
+                    width: 100%;
+                    background: plum;
+
+                }
+            }
+        </style>
+       
+</head>
+<body>
+    <div id="conteneur">
+        <main id="cricri">
+            <h1>Images en float</h1><br>
+            <h2>Faire flotter l'image à droite</h2>
+        
+            
+            <p>Un paragraphe avec une image qui flotte à droite.Un paragraphe avec une image qui flotte à droite.Un paragraphe avec une image qui flotte à droite.</p>
+            
+               <div class="image1">
+                   <img src="../img/star.png" width="50px" alt="etoile">
+               </div>
+            <br>
+               <h2>Faire flotter l'image à gauche</h2>
+            
+            
+                <p class="p2">Un paragraphe avec une image qui flotte à gauche.Un paragraphe avec une image qui flotte à gauche.Un paragraphe avec une image qui flotte à gauche.Un paragraphe avec une image qui flotte à gauche.</p>
+        
+                <div class="image2">    
+                    <img src="../img/star.png" width="50px" alt="etoile">
+                </div>
+            
+        </main>
+        <!-- Correction Patrick  -->
+        <div id="correction">
+            <h2>Image en float</h2>
+        
+            <p>Faire flotter l'image à droite: </p>
+            <p><img src="../img/star.png" alt="mon étoile" class="a-droite">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ab architecto veritatis totam sequi sed, explicabo labore, soluta rem consectetur nisi, enim maxime. Obcaecati consequatur esse incidunt culpa, iure unde?</p>
+        
+            <p>Faire flotter l'image à gauche</p>
+            <p><img src="../img/star.png" alt="mon étoile" class="a-gauche">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis cum, voluptate sint quis minima eos cumque, aperiam error ducimus temporibus, facere dolores officia ad enim quam consequatur ipsum? Vitae, ab.</p>
+        
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+    <style>
+        /* Main = qui contient toute la page  */
+        /* hauteur et largeur définie  */
+        main {
+            height: 596px;
+            width: 1239px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+            /* Header= en-tête du site ou page  */
+        header {
+            background-color: #98bdee;
+            height: 150px;
+            margin: 0 auto;
+        }
+            /* Fin de header  */
+            /* Début de NAV  */
+        nav {
+            background-color: #bfbfdb;
+            height: 100px;
+            margin: 0 auto;
+            padding-top: 0;
+        }
+        /* Fin de NAV  */
+        /* La section qui contient toutes les images et le corps de la page  */
+        section {
+            background-color: #ebcdd2;
+            height: 300px;
+            }
+        figure {
+            text-align: center;
+            
+        }
+        figcaption {
+            position: relative;
+            top: -20px;
+            color: white;
+            background: black;
+        }
+        .img1 {
+            float: left;
+            padding: 30px;
+            text-align: center;
+            display: flex;
+        }
+        .img2 {
+            float: left;
+            padding: 30px;
+            display: flex;
+        }
+        .img3 {
+            float: left;
+            padding: 30px;
+            display: flex;
+            
+        }
+        .img4 {
+            float: left;
+            padding: 30px;
+            display: flex;
+            
+        }
+        /* Fin de section  */
+        p {
+            margin: 0 auto;
+        }
+        .clear {
+            clear: both;
+        }
+        footer {
+            background-color: #98bdee;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main qui contient tous les éléments de la page  -->
+    <main>
+        <header>
+            <h1>HEADER</h1>
+        </header>
+        <!-- Fin de header et débutr de nav  -->
+        <nav>
+            <p>NAV</p>
+        </nav>
+         <!-- La section qui contient toutes les images et le corps de la page   -->
+        <section>
+            <p>De bien beaux voiliers</p>
+            
+            <div class="img1">
+                <figure>
+                    <img src="../img/voiliergonet.jpg" alt="Voilier et montagne sur fond bleu">
+                    <figcaption>Légende</figcaption>
+                </figure>
+            </div>
+            <div class="img2">
+                <figure>
+                    <img src="../img/voilierimage.jpg" alt="Voilier blanc">
+                    <figcaption>Légende</figcaption>
+                </figure>
+            </div>
+            <div class="img3">
+                <figure>
+                    <img src="../img/voilierplaque.jpg" alt="voilier jaune">
+                    <figcaption>Légende</figcaption>
+                </figure>
+            </div>
+            <div class="img4">
+                <figure>
+                    <img src="../img/voiliertrinite.jpg" alt="Voilier orange">
+                    <figcaption>Légende</figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- Fin de section et debut de footer  -->
+        <div class="clear"></div>
+        <footer>
+            <p>FOOTER</p>
+        </footer>
+    </main>
+</body>
+</html>

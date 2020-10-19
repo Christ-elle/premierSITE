@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13_selecteurs_css</title>
+    <style>
+        /* 1- L'astérisque cible touts les éléments de la page */
+        /* on peut également cibler tous les sélécteurs enfants d'un élément.
+        ex: ( à utiliser le moin possible)
+        #container * {
+            border: 1px solid black;
+         }   */
+        * {
+           box-sizing: border-box;
+        }
+        /* 2- Le symbole dièse pour cibler un élément par son id  */
+        #container {
+            width: 960px;
+            margin: auto;
+            background-color: aquamarine;
+        }
+        .error {
+            background-color: red;
+            color: white;
+        }
+        /* 4- les sélécteurs descendants pour ciblekr les a dans les li et uniquement ceux là */
+        li a {
+            text-decoration: none;
+        }
+        /* 5- le selecteur de type pour cibler tous les éléments d'une page*/
+        ul {
+            background-color: pink;
+            /* width: 500px; */
+        }
+        /* 6- Les pseudos-classe ex: :linck tous les liens qui ne sont pas encore cliqués */
+        a:link {
+            color: green;
+        }
+        a:visited {
+            color: white;
+        }
+        /* 7- Le sélécteur adjascent: il ne séléctionne que l'élément qui est précédé par le premier élément ciblé. ici le p précédé d'une ul*/
+
+        ul + p {
+            background-color: hotpink;
+        }
+        /* 8- Le sélécteurs d'enfant direct */
+        div#listing >ul {
+            border: 5px solid violet;
+            background-color: white;
+        }
+        /* 9- Ce combinateur frère est proche de x+y mais moins strict, en effet, il cible TOUS les p qui sont précédés d'un h3 */
+        h3 ~ p {
+            color: navy;
+            text-transform: uppercase;
+        }
+        /* 10- le selecteur d'attributs  */
+        a[title] {
+            background-color: black;
+            color: white;
+        }
+        /* 11- Toutes les balises a qui contiennent un lien vers http://www.lemonde.fr */
+        a[href="http://www.lemonde.fr"] {
+            background-color: violet;
+        }
+        /* 12- La valeur qui suit l'étoile doit apparaître quelque part dans la valeur de l'attribut */
+        a[href*="mac"], a[href*="mon"] {
+            background-color:yellow;
+            color: black;
+            text-transform: uppercase;
+        }
+        /* 13-  */
+
+        /* 14-  */
+
+        /* 15-  */
+
+        /* 16-  */
+
+        /* 17- Une pseudo class pour cibler un élément d'int'erface d'utilisateur */
+        input[type=radio]:checked + label {
+            border: 2px solid red;
+        }
+        /* 18-  */
+
+        /* 19- pseudo class d'action utilisateur :hover pour obtenir une bordure autour du lien et au survol */
+        a:hover {
+            border-bottom: 2px dashed red;
+        }
+        /* 20- Pseudo class de négation, donc toutes des div sauf #container */
+        div:not(#container) {
+            color: orange;
+        }
+        /* 21- pseudo élément identifié par  "::" */
+        p::first-line {
+            font-weight: bold;
+        }
+        p#lettrine::first-letter {
+            font-size: 2em;
+            float: left;
+            padding-right: 5px;
+        }
+        /* 22-  la pseudo class ELEMENT:nth-child(n)*/
+        #courses li:nth-child(2) {
+            background-color: black;
+            color: cornsilk;
+        }
+         /* 23- pour selectionner l'avant-dernier par esemple, ou pour selectionner à partir du dernier */
+         ul#departement li:nth-last-child(2){
+            background: #fff;
+        }
+        
+        /* 24- */
+        /* 25- */
+        /* 26- */
+        ul#departement li {
+            border-top: 1px solid palegreen;
+            border-bottom: 1px solid palegreen;
+            padding: 2px;
+            list-style: url("../img/star2.png");
+        }
+        ul#departement li:first-child {
+            border-top: none;
+        }
+        /* 27-ELEMENT:last-child " ne pas donner de chiffre passe automatiquement au dernier"*/
+        ul#courses li:last-child {
+            font-family: cursive;
+        }
+        ul#mini-menu {
+            width: 200px;
+            background: purple;
+            color: #fff;
+            list-style: none;
+            padding-left: 0;
+
+        }
+        ul#mini-menu li {
+            padding: 20px;
+            border-bottom: 1px solid #000;
+            border-top: 1px solid #858585;
+        }
+        ul#mini-menu li:first-child {
+          border-top: none;
+        }
+        ul#mini-menu li:last-child {
+          border-bottom: none;
+        }
+        /* 28- ELEMENT:only-child */
+        article p:only-child {
+            color: orange;
+        }
+       
+        /* 29- ELEMENT:first-of-type */
+        article ul:first-of-type > li:nth-child(2) {
+            font-weight: bold;
+        }
+        p + ul li:last-child {
+            color: palegoldenrod;
+        }
+        article ul:first-of-type li:nth-last-child(1) {
+            font-size: 20px;
+        }
+        ol li {
+            list-style: upper-alpha;
+        }
+        #sous-liste li {
+            list-style: lower-alpha;
+        }
+
+    </style>
+</head>
+<body>
+    <div div id="container">
+        <h1>Les selecteurs CSS à connaître...</h1>
+        <p>Il y a une <span class="error">erreure</span>dans cette phrase.</p>
+        <p>Et dans celle là <span class="error">aussie</span></p>
+        <hr>
+        <ul>
+            <li><a href="#">Rubrique 1</a></li>
+            <li><a href="#">Rubrique 2</a></li>
+            <li><a href="#" title="La rubrique 3">Rubrique 3</a></li>
+            <li><a href="#">Rubrique 4</a></li>
+           
+        </ul>
+        <p>1- un lien vers le site de notre choix <a href="https://macbidouille.com/">Cliquez ici</a></p>
+        <p>Et là un lien vers Mac Génération <a href="http://www.macg.co">Mac Génération</a></p>
+        <p>2- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem laboriosam voluptatibus possimus voluptatum sequi tempora cupiditate illo sit, rerum beatae. Nobis accusantium hic minima aperiam autem ex doloremque, iste impedit!</p>
+        <p>Et ici un lien vers le journal <a href="http://www.lemonde.fr">Le monde</a></p>
+        <hr>
+        <ul id="courses">
+            <li>Pain</li>
+            <li>Vin</li>
+            <li>Boursin</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non alias debitis totam, consequatur placeat earum, adipisci laborum vitae dignissimos nihil similique aliquam eligendi reprehenderit, pariatur commodi reiciendis harum optio corrupti?</p>
+        <h3>Coucou</h3>
+        <div id="listing">
+            <ul>
+                <li>Afrique
+                    <ul>
+                        <li>Cap-Vert</li>
+                        <li>Ghana</li>
+                    </ul>
+                </li>              
+                <li>Amériques</li>
+                <li>Asie</li>
+                <li>Europe</li>
+                <li>Océanie</li>
+            </ul>
+        </div>
+        <p id=lettrine>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque unde quaerat maiores impedit, accusamus quasi repellat! Distinctio repudiandae similique aut, repellat reprehenderit aspernatur ea placeat voluptas nostrum laboriosam ipsam necessitatibus?</p>
+        <hr>
+        <form action="#" method="POST">
+            <input type="radio" name="rad" value="bouton radio">
+            <label for="rad">Bouton radio</label>
+        </form>
+        <hr>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam tempora delectus nihil commodi rem deleniti sunt. Quam, iusto consequuntur nostrum, expedita quas nobis, voluptatem molestiae suscipit explicabo corrupti animi porro?</p>
+        <h2>La liste des départements français</h2>
+        <ul id="departement">
+        <li>01 - Ain - Bourg-en-bresse</li>
+        <li>02 - Aisne - Laon </li>       
+        <li>03 - Allier - Moulins</li>        
+        <li>04 - Alpes-de-Haute-Provence - Digne-les-bains </li>       
+        <li>05 - Hautes-alpes - Gap </li>       
+        <li>06 - Alpes-maritimes - Nice </li>       
+        <li>07 - Ardèche - Privas </li>       
+        <li>08 - Ardennes - Charleville-mézières</li>        
+        <li>09 - Ariège - Foix </li>       
+        <li>10 - Aube - Troyes</li>
+        <li>11 - Aude - Carcassonne</li>
+        <li>12 - Aveyron - Rodez</li>
+        <li>13 - Bouches-du-Rhône - Marseille</li>
+        <li>14 - Calvados - Caen</li>
+        <li>15 - Cantal - Aurillac</li>
+        <li>16 - Charente - Angoulême</li>
+        <li>17 - Charente-maritime - La rochelle</li>
+        <li>18 - Cher - Bourges</li>
+        <li>19 - Corrèze - Tulle</li>
+        <li>2A - Corse-du-sud - Ajaccio</li>
+        <li>2B - Haute-Corse - Bastia</li>
+    </ul>
+    <hr>
+    <h2>Un mini menu</h2>
+    <ul id="mini-menu">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+    <hr>
+    <h2>Des paragraphes</h2>
+    <article>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, facere tenetur debitis consequuntur eveniet assumenda modi nulla molestias id dicta possimus laboriosam et placeat fugiat? Ipsum architecto quidem reprehenderit reiciendis?</p>
+    </article>
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cumque quas assumenda autem. Nostrum aliquam quam vitae numquam, libero earum nulla rerum provident sequi quasi doloremque dolorum, praesentium reprehenderit laborum.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia molestiae totam impedit reprehenderit inventore, quibusdam distinctio molestias dolores odio. Illum, unde. Provident, dicta esse molestiae inventore accusamus recusandae adipisci atque!</p>
+    </article>
+    <hr>
+    <h2>suite...</h2>
+    <article>
+        <p>Mon paragraphe ici.</p>
+        <ul>
+            <li>Element de liste 1</li>
+            <li>Element de liste 2</li>
+        </ul>
+        <ul>
+            <li>Element de liste 3</li>
+            <li>Element de liste 4</li>
+        </ul>
+    </article>
+    <hr>
+    <ol>
+        <li>Coucou 1
+            <ol id="sous-liste">
+                <li>Coucou bis 1</li>
+                <li>Coucou bis 2</li>
+                <li>Coucou bis 3</li>
+                <li>Coucou bis 4</li>
+                <li>Coucou bis 5</li>
+            </ol>
+        </li>
+        <li>Coucou 2</li>
+        <li>Coucou 3</li>
+        <li>Coucou 4</li>
+        <li>Coucou 5</li>
+        <li>Coucou 6</li>
+        <li>Coucou 7</li>
+        <li>Coucou 8</li>
+        <li>Coucou 9</li>
+        <li>Coucou 10</li>
+        
+    </ol>
+        <!-- fin de container  -->
+    </div>
+ 
+</body>
+</html>

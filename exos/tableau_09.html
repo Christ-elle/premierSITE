@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau_09</title>
+    <style>
+        body {
+            background-color: rgb(212, 230, 236);
+        }
+        h1 {
+            text-align: center;
+        }
+        main {
+            height: 80%;
+            width: 80%;
+            padding-left: 15%;
+            margin-top: 5%;
+        }
+        table {
+            border: 2px solid purple;
+            width: 80%;
+            border-collapse: collapse;
+            
+        }
+        td {
+            border: 2px solid purple;
+            width: 80%;
+        }
+        caption {
+            text-align: center;
+            border: solid 2px purple;
+            background-color: lavender;
+            font-size: 20px;
+        }
+        
+        <!-- 
+/* <h2>Correction</h2> --> */
+ /* les styles pour le tableau */
+        table.solution {
+            margin: auto;
+            width: 80%;
+            border-collapse: collapse;
+        }
+        .solution caption {
+            background-color:lightblue;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1.5em;
+            color: #fff;
+        }
+        .solution thead {
+            background-color:rgba(28, 152, 194, 0.993);
+            font-weight: bold;
+        }
+        .solution td {
+            border: 1px solid rgba(28, 152, 194, 0.993);
+            padding: 5px;
+            /* uniquement sur les td 
+            vertical-align: middle; */
+        }
+        /* .solution tbody tr:nth-of-type(even) {
+            background-color:rgba(95, 201, 236, 0.829);
+        } */
+        /* even = pair */
+        .solution tr:nth-child(even) {
+            background-color:rgba(95, 201, 236, 0.829);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Tableau HTML mes magasins préférés</h1>
+    <main>
+        <table> 
+            <tr>
+            <caption> Adresse//Fournisseurs</caption>
+            </tr>
+            <tr>
+                <td>Cie</td>
+                <td>Contact</td>
+                <td>Pays</td>
+            </tr>
+            <tr>
+                <td>Le pain des amis</td>
+                <td>Maria Duroc</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Los vinos buenos</td>
+                <td>François Duparc</td>
+                <td>Espagne</td>
+            </tr>
+            <tr>
+                <td>Kangoroo and cie</td>
+                <td>Roland Mandel</td>
+                <td>Australie</td>
+            </tr>
+            <tr>
+                <td>Twinnings</td>
+                <td>Helène Spike</td>
+                <td>Royaume unis</td>
+            </tr>
+            <tr>
+                <td>Cicles Laurent</td>
+                <td>Pierre Laurent</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Santini</td>
+                <td>Nanni Moretti</td>
+                <td>Italie</td>
+            </tr>
+            
+            
+
+        </table>
+         <!-- correction HTML  -->
+         <table class="solution">
+            <caption>Adresses // fournisseurs</caption>
+            <thead>
+                <tr>
+                    <td>Compagnies</td>
+                    <td>Contacts</td>
+                    <td>Pays</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Le pain des amis</td>
+                    <td>Maria Duroc</td>
+                    <td>France</td>
+                </tr>
+                <tr>
+                    <td>Los vinos buenos</td>
+                    <td>François Duparc</td>
+                    <td>Espagne</td>
+                </tr>
+                <tr>
+                    <td>Kangoroo and Cie</td>
+                    <td>Roland Mendel</td>
+                    <td>Australie</td>
+                </tr>
+                <tr>
+                    <td>Twinnings</td>
+                    <td>Helen Spike</td>
+                    <td>Royaume-Uni</td>
+                </tr>
+                <tr>
+                    <td>Cycles Laurent</td>
+                    <td>Pierre Laurent</td>
+                    <td>France</td>
+                </tr>
+                <tr>
+                    <td>Santini</td>
+                    <td>Nanni Moretti</td>
+                    <td>Italie</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tr>
+                <th>Identifient</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+
+            </tr>
+            <tr>
+                <th>Numéro 1</th>
+                <td>Titi</td>
+                <td>juju</td>
+            </tr>
+            <tr>
+                <th>Numéro 2</th>
+                <td>Tata</td>
+                <td>kiki</td>
+            </tr>
+            <tr>
+                <th>Numéro 3</th>
+                <td>Toto</td>
+                <td>lolo</td>
+            </tr>
+
+        </table>
+
+
+        
+    </main>
+    
+</body>
+</html>
+ 
+
+        
